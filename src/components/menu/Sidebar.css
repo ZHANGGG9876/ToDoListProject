@@ -1,0 +1,108 @@
+.sidebar {
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #f4cc70d4;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.486);
+  }
+  
+  .user-profile {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+    height: 290px;
+    margin-bottom: 20px;
+  }
+  
+  .user-profile img {
+    width: 100%;
+    height: 75%;
+    border-radius: 50%;
+    margin-right: 10px;
+    box-shadow: 1px 1px 5px #777;
+  }
+  
+  .user-profile span {
+    margin: 10px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.609);
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  .add-task-button {
+    display: block;
+    font-size: 19px;
+    font-weight: bold;
+    width: 100%;
+    padding: 10px;
+    background-color: #d87722d0;
+    color: rgb(222, 218, 218);
+    box-shadow: 1px 1px 5px #777;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .add-task-button:hover {
+    background-color: #874c18;
+  }
+
+  .separator {
+    border: none;
+    border-top: 1px solid #8584844d;
+  }
+
+  button {
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    font-size: 18px;
+    background-color: transparent;
+    color: #605f5f;
+    border: none;
+    border-bottom: 1px solid #8584844d;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  button:hover {
+    background-color: #8584844d;
+  }
+  .selected {
+    background-color: #8584844d;
+    color: rgba(0, 0, 0, 0.687);
+  }
+
+.logout-button-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  bottom: 50px;
+  width: 250px;
+}
+
+.logout-button {
+  display: block;
+  font-size: 18px;
+  width: 100%;
+  padding: 10px;
+  background-color: transparent;
+  color: #605f5f;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.settings-icon {
+  align-items: start;
+  margin-left: 7px;
+}

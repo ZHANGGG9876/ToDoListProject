@@ -1,0 +1,188 @@
+.popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#fdda89;
+  }
+
+  .popup-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .list-icon {
+    margin-right: 10px;
+  }
+
+  .popup-content {
+    background-color: #faecca;
+    flex-direction: column;
+    padding: 15px;
+    width: 40%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 2px 5px 8px gray;
+    text-align: center;
+  }
+
+  .popup-title {
+    margin-top: 0;
+    color: #20948ad8;
+    font-size: 50px;
+    text-shadow: 2px 2px 8px #777;
+    display: flex;
+    align-items: center; /* Alinear verticalmente */
+    justify-content: center; /* Alinear horizontalmente */
+  }
+  
+
+  .popup-login-title {
+    margin-top: 0;
+    color: #20948b;
+  }
+
+  .popup-input {
+    /* display: block; */
+    width: 85%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+  }
+  
+.agree-terms-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+  
+  .popup-signup-button {
+    width: 42.5%;
+    padding: 10px;
+    border:1px solid #ccc;
+    background-color: #d87722d0;
+    color: white; 
+    border-radius: 20px; 
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 12px;
+    margin-right: 12px;
+    box-shadow: 2px 2px 8px gray;
+  }
+
+  .popup-signup-button:hover {
+    background-color: #9b5518; 
+    color: rgba(255, 255, 255, 0.745);
+  }
+  .popup-forgot-password {
+    color: #777; 
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 8px; 
+    margin-left: 10px; 
+    display: inline-block;
+    cursor: pointer;
+    border-bottom:1px solid #777;
+    }
+  
+  .popup-forgot-password:hover {
+    color: #333; 
+  }
+
+  .popup-login-with-google-button {
+    display: inline-block;
+    width: 85%;
+    padding: 8px;
+    border:1px solid #20948b;
+    background-color: #20948a25;
+    color: #20948b; 
+    border-radius: 20px; 
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 15px;
+    box-shadow: 2px 2px 8px gray;
+  }
+
+  .popup-login-with-google-button:hover {
+    background-color:#11524c; 
+    color: white;
+  }
+
+  .popup-login-with-facebook-button {
+    display: inline-block;
+    width: 85%;
+    padding: 8px;
+    border:1px solid #20948b;
+    background-color: #20948a25;
+    color: #20948b; 
+    border-radius: 20px; 
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 8px gray;
+  }
+
+  .popup-login-with-facebook-button:hover {
+    background-color:#11524c; 
+    color: white;
+  }
+  
+  .popup-login-with-google-button .icon {
+    margin-left: 10px; 
+    font-size: 20px;
+  }
+
+  .popup-login-with-facebook-button .icon {
+    margin-left: 10px; 
+    font-size: 20px;
+  }
+
+
+/*popuperror*/
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Color de fondo semitransparente */
+  z-index: 0; /* Asegura que el fondo oscurecido esté por encima del contenido */
+}
+.error-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #faf7f7; /* Color de fondo del pop-up */
+  color: white; /* Color del texto */
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.error-message {
+  flex: 1;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  color: rgb(147, 22, 22);
+  font-size: 20px;
+  cursor: pointer;
+  width: 10%;
+  padding: 0;
+  margin-left: 10px;
+}

@@ -1,0 +1,83 @@
+.task-item {
+    flex-basis: calc(23.5% - 20px); /* Tres elementos por fila con margen entre ellos */
+    min-width: 250px; /* Ancho mínimo de cada elemento */
+    border: 1px solid #6ab187;
+    box-shadow: 1px 1px 7px grey;
+    border-radius: 20px;
+    margin: 25px;
+    background-color: #6ab18829;
+}
+
+.task-title {
+    margin-left: 10px;
+    font-size: 20px;
+    margin-bottom: -15px;
+}
+
+.task-date {
+    margin-left: 10px;
+    font-size: 14px;
+    color: rgb(99, 98, 98);
+    margin-bottom: -9px;
+}
+
+.task-description {
+    margin-left: 10px;
+    height: 20px;
+}
+
+.task-actions {
+    border-top: 1px solid rgba(128, 128, 128, 0.187);
+    margin-left: 10px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.important-completed-buttons {
+    /* margin-left: 10px; */
+    display: flex;
+    justify-content: center;
+}
+
+.task-item.completed {
+    color: #20948b; 
+}
+
+.edit-delete-buttons {
+    display: flex;
+    justify-content: end;
+}
+
+.completed-action-button {
+    font-size: 20px;
+    border:none;
+}
+
+.important-action-button {
+    font-size: 20px;
+    border:none;
+}
+
+.edit-action-button {
+    border: 1px solid #de7a228a;
+    color: #de7a22;
+    border-radius: 20px;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-top: 8px;
+}
+
+.delete-action-button {
+    border: 1px solid rgba(182, 38, 38, 0.399);
+    color: rgba(182, 38, 38, 0.856);
+    margin-left: 8px;
+    border-radius: 20px;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-top: 8px;
+}
