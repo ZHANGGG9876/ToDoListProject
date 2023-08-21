@@ -1,5 +1,6 @@
 # To Do List App
-![image](https://github.com/ZHANGGG9876/ToDoListProject/assets/91902039/5f45216d-bbc0-4f31-8d3b-56d38e3bb49b)
+![image](https://github.com/ZHANGGG9876/ToDoListProject/assets/91902039/2c8450d4-9559-46dc-8011-ebac782fa038)
+
 
 
 The To Do List App is an application for managing tasks, adding due dates, and marking tasks as important or completed. It also includes login and registration pages for a complete user experience.
@@ -27,19 +28,22 @@ The registration page allows new users to create accounts in the application.
 
 ### Main App Page
 
-![image](https://github.com/ZHANGGG9876/ToDoListProject/assets/91902039/46944c6c-36e8-4f60-8efc-d584af740f8b)
+![image](https://github.com/ZHANGGG9876/ToDoListProject/assets/91902039/16c27040-0b84-43b9-b336-78f49e63a6c1)
+
 
 The main page displays a list of pending tasks with their due dates and marking options. Users can filter tasks by title to quickly find what they need.
 
 ### Add Task Form
 
-![image](https://github.com/ZHANGGG9876/ToDoListProject/assets/91902039/c65810c2-4d5c-4959-b81f-a5b77b2dae1b)
+![image](https://github.com/ZHANGGG9876/ToDoListProject/assets/91902039/fe895149-2d8b-4c33-be52-22657407aa16)
+
 
 Users can add new tasks using the Add Task form. The default date is set to today's date.
 
 ### Edit Task Form
 
-![image](https://github.com/ZHANGGG9876/ToDoListProject/assets/91902039/899dd24e-674f-4ed0-a490-42dd399c271d)
+![image](https://github.com/ZHANGGG9876/ToDoListProject/assets/91902039/76b442bc-b7b8-4501-b961-88d441a17b44)
+
 
 Users can edit existing tasks using the Edit Task form. The form includes options to update the due date and description of the task.
 
