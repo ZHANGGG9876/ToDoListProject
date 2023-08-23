@@ -22,10 +22,14 @@ const TodoList = () => {
   const handleSearchChange = (e) => {
     const newSearchTerm = e.target.value;
     setSearchTerm(newSearchTerm);
-    const filtered = tasks.filter(task =>
-      task.title.toLowerCase().includes(newSearchTerm.toLowerCase())
-      );
+    if ( newSearchTerm === "" ){
+      handleFilter(filtrarOption);
+    } else {
+      const filtered = tasks.filter(task =>
+        task.title.toLowerCase().includes(newSearchTerm.toLowerCase())
+        );
       setFilteredTasks(filtered);
+    }  
   }
 
   const handleFilter = (filter) => {
@@ -70,7 +74,6 @@ const TodoList = () => {
           setUsername(userData.username || '');
           setTasks(userData.tasks || []);
           setFilteredTasks(userData.tasks || []);
-          {console.log('filtrarOption',filtrarOption)}
           const unsubscribeTasks = onSnapshot(docRef, (docSnapshot) => {
             const updatedUserData = docSnapshot.data();
             setTasks(updatedUserData.tasks || []);

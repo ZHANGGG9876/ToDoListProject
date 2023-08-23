@@ -82,24 +82,24 @@ const SignUpPage = () => {
   };
 
   return (
-    <div className='popup'>
-      <div className="popup-title-container">
-        <h1 className="popup-title">
+    <div className='signin'>
+      <div className="signin-title-container">
+        <h1 className="signin-title">
           <Typical steps={['Welcome  to To Do List ...']} wrapper="p" />
         </h1>
       </div>
-      <div className='popup-content'>
-        <h1 className='popup-login-title'>Sign Up</h1>
+      <div className='signin-content'>
+        <h1 className='signin-login-title'>Sign Up</h1>
       <input 
         required
-        className='popup-input'
+        className='signin-input'
         type="text"
         placeholder="Enter your email"
         value={email}
         onChange={(e) => setEmail(e.target.value)} />
       <input
         required
-        className="popup-input"
+        className="signin-input"
         type="password"
         placeholder="Create a password"
         value={password}
@@ -107,7 +107,7 @@ const SignUpPage = () => {
        />
       <input
         required
-        className="popup-input"
+        className="signin-input"
         type="password"
         placeholder="Repeat your password"
         value={repeatPassword}
@@ -115,7 +115,7 @@ const SignUpPage = () => {
       />
       <input
         required
-        className='popup-input'
+        className='signin-input'
         type="text"
         placeholder="Enter a username"
         value={username}
@@ -126,21 +126,21 @@ const SignUpPage = () => {
             checked={isChecked}
             onChange={handleCheckboxChange}
           />
-            I agree all statement in <a className="popup-agree-terms" href="#">
+            I agree all statement in <a className="signin-agree-terms" href="#">
             Terms of service
         </a>
         </label>
-        <div className="button-container">
-          <button className='popup-signup-button' onClick={handleSignUp}>Sign Up</button>
+        <div className="button-signup-container">
+          <button className='signin-signup-button' onClick={handleSignUp}>Sign Up</button>
         </div>
-        <p>Have already an account?<a className="popup-have-account" href="#" onClick={handleGoToLoginPage}>
+        <p className='agree-terms-container'>Have already an account?<a className="signin-have-account" href="#" onClick={handleGoToLoginPage}>
             Login here
         </a></p>
       </div>
       {showEmailError && (
          <div>
           <div className="overlay" onClick={handleCloseError} />
-            <div className="error-popup">
+            <div className="error-signin">
               <span className="error-message">{errorMessage}</span>
               <button className="close-button" onClick={handleCloseError}>
                 &#10005;

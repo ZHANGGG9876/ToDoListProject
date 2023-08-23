@@ -1,4 +1,4 @@
-.popup {
+.signin {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,7 +11,7 @@
     background-color:#fdda89;
   }
 
-  .popup-title-container {
+  .signin-title-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,10 +21,10 @@
     margin-right: 10px;
   }
 
-  .popup-content {
+  .signin-content {
     background-color: #faecca;
     flex-direction: column;
-    padding: 15px;
+    padding: 6px;
     width: 40%;
     height: auto;
     border-radius: 20px;
@@ -32,27 +32,28 @@
     text-align: center;
   }
 
-  .popup-title {
+  .signin-title {
     margin-top: 0;
+    margin-bottom: 0;
     color: #20948ad8;
     font-size: 50px;
     text-shadow: 2px 2px 8px #777;
     display: flex;
-    align-items: center; /* Alinear verticalmente */
-    justify-content: center; /* Alinear horizontalmente */
+    align-items: center; 
+    justify-content: center; 
   }
   
 
-  .popup-login-title {
+  .signin-login-title {
     margin-top: 0;
+    margin-bottom: 0;
     color: #20948b;
   }
 
-  .popup-input {
-    /* display: block; */
+  .signin-input {
     width: 85%;
-    padding: 10px;
-    margin: 10px;
+    padding: 7px;
+    margin: 7px;
     border: 1px solid #ccc;
     border-radius: 20px;
   }
@@ -61,11 +62,18 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    font-size: 11px;
+    margin-bottom: 5px;
 }
-  
-  .popup-signup-button {
+
+.button-signup-container{
+  display:flex;
+  justify-content: center;
+}
+  .signin-signup-button {
     width: 42.5%;
-    padding: 10px;
+    height: 35px;
+    /* margin: 5px; */
     border:1px solid #ccc;
     background-color: #d87722d0;
     color: white; 
@@ -78,94 +86,39 @@
     box-shadow: 2px 2px 8px gray;
   }
 
-  .popup-signup-button:hover {
+  .signin-signup-button:hover {
     background-color: #9b5518; 
     color: rgba(255, 255, 255, 0.745);
   }
-  .popup-forgot-password {
+  .signin-forgot-password {
     color: #777; 
     text-decoration: none;
     font-size: 14px;
-    margin-top: 8px; 
     margin-left: 10px; 
     display: inline-block;
     cursor: pointer;
     border-bottom:1px solid #777;
     }
   
-  .popup-forgot-password:hover {
-    color: #333; 
-  }
 
-  .popup-login-with-google-button {
-    display: inline-block;
-    width: 85%;
-    padding: 8px;
-    border:1px solid #20948b;
-    background-color: #20948a25;
-    color: #20948b; 
-    border-radius: 20px; 
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    margin: 15px;
-    box-shadow: 2px 2px 8px gray;
-  }
-
-  .popup-login-with-google-button:hover {
-    background-color:#11524c; 
-    color: white;
-  }
-
-  .popup-login-with-facebook-button {
-    display: inline-block;
-    width: 85%;
-    padding: 8px;
-    border:1px solid #20948b;
-    background-color: #20948a25;
-    color: #20948b; 
-    border-radius: 20px; 
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    box-shadow: 2px 2px 8px gray;
-  }
-
-  .popup-login-with-facebook-button:hover {
-    background-color:#11524c; 
-    color: white;
-  }
-  
-  .popup-login-with-google-button .icon {
-    margin-left: 10px; 
-    font-size: 20px;
-  }
-
-  .popup-login-with-facebook-button .icon {
-    margin-left: 10px; 
-    font-size: 20px;
-  }
-
-
-/*popuperror*/
+/*signinerror*/
 .overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6); /* Color de fondo semitransparente */
-  z-index: 0; /* Asegura que el fondo oscurecido esté por encima del contenido */
+  background-color: rgba(0, 0, 0, 0.6); 
+  z-index: 0;
 }
-.error-popup {
+
+.error-signin {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #faf7f7; /* Color de fondo del pop-up */
-  color: white; /* Color del texto */
+  background-color: #faf7f7; 
+  color: white; 
   padding: 10px 20px;
   border-radius: 5px;
   display: flex;
