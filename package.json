@@ -2,6 +2,7 @@
   "name": "todo_list",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ZHANGGG9876.github.io/ToDoListProject",
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.4.2",
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
